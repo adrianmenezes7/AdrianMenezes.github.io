@@ -1,0 +1,58 @@
+@import url(font-awesome.min.css);
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Wrapper */
+
+	#wrapper {
+		background-color: #212931;
+		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+    .about-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.about-image img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+		
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: 1;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
